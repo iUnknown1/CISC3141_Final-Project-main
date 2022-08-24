@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Authentication</title>
+</head>
+<body>
+	<div id="login" class="container">
+		<h2 class="text-center">Sign In</h2>
+		<br>
+		<form action="/dashboard.html" class="loginForm">
+			<span class="signin-error error-message"></span>
+			<br>
+			<div class="input-group">
+				<label for="username" class="label">Username</label>
+				<input type="text" id="username" class="input" placeholder="Enter your username">
+				<span class="error-message"></span>
+			</div>
+			<br>
+			<div class="input-group">
+				<label for="password" class="label">Password</label>
+				<input type="password" id="password" class="input" placeholder="Enter your password">
+				<span class="error-message"></span>
+			</div>
+			<br>
+			<button class="loginButton" type="submit">Login</button>
+			<br>
+			<div class="or">
+				<hr class="bar"><span>OR</span><hr class="bar">
+			</div>
+			<br>
+			<button class="createButton" type="button">Create an account</button>
+		</form>
+	</div>
+	<div id="signup" class="container hide">
+		<h2 class="text-center">Sign Up</h2>
+		<br>
+		<form action="/dashboard.html" class="signupForm">
+			<div class="input-group">
+				<label for="username" class="label">Username</label>
+				<input type="text" id="usernameSignUp" class="input" placeholder="Create an username">
+				<span class="error-message"></span>
+			</div>
+			<br>
+			<div class="input-group">
+				<label for="password" class="label">Password</label>
+				<input type="password" id="passwordSignUp" class="input" placeholder="Create an password">
+				<span class="error-message"></span>
+			</div>
+			<br>
+			<button class="createAccount" type="button">Create</button>
+			<br>
+			<div class="or">
+				<hr class="bar"><span>OR</span><hr class="bar">
+			</div>
+			<br>
+			<button class="return" type="button">Return</button>
+		</form>
+	</div>
+	<script src="js/signup.js"></script>
+	<script src="js/signin.js"></script>
+</body>
+</html>

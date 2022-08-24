@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eeeeee;
+  font-size: 16px;
+  height: 100vh;
+}
+
+.container h2{
+    font-weight: bold;
+}
+
+.container {
+  padding: 1rem;
+  background-color: #fff;
+  max-width: 550px;
+  min-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group{
+  width: 90%;
+}
+
+.input {
+  appearance: none;
+  display: block;
+  width: 100%;
+  color: #333;
+  border: 1.5px solid rbg(180, 180, 180);
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.input.input-error {
+  border: 1.5px solid red;
+}
+
+.input.input-error:focus {
+  border: 1.5px solid red;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #0084ff;
+  background-clip: padding-box;
+}
+
+.error-message {
+  font-size: 0.85rem;
+  color: red;
+}
+
+.loginForm,
+.signupForm{
+  display: flex;
+  align-items: center;
+}
+
+.loginButton,
+.createAccount {
+  border-radius: 20px;
+  border: 1px solid #FF4B2B;
+  background-color: #FF4B2B;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  text-align: center;
+  width: 80%;
+}
+
+button:hover {
+  filter: brightness(125%);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+.or{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.or .bar{
+  flex: auto;
+  border: none;
+  height: 1px;
+  background: #aaa;
+}
+
+.or span{
+  color: #ccc;
+  padding: 0 0.8rem;
+}
+
+.createButton,
+.return{
+  background-color: #0084ff;
+  border-radius: 20px;
+  border: 1px solid #FF4B2B;
+  background-color: #FF4B2B;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  text-align: center;
+  width: 80%;
+}
+
+.hide{
+  display: none;
+}
